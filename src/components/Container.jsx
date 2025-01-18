@@ -20,7 +20,12 @@ function Container (){
     }
 
     function removeAllHandler() {
-        setItems([])
+        const confirm = window.confirm('Are you sure you want to remove all items')
+        if (confirm === true){ 
+            setItems([]) 
+        } else {
+            null
+        }
     }
 
     return (
